@@ -1,0 +1,363 @@
+1.	How to compare two JSON have the same properties without order?
+a.	var obj1 = { name: "Person 1", age:5 };
+b.	var obj2 = { age:5, name: "Person 1" };
+
+
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+ 
+
+let a=JSON.stringify(obj1)===JSON.stringify(obj2)
+
+console.log(a)
+
+Output:-
+false
+
+
+4.
+1)How to get value of the variable myvar as output
+
+let myvar=1
+
+condole.log(myvar)
+
+output:
+1
+
+
+2)Declare variables to store your first name, last name, marital status, country and age in multiple lines.
+
+let first name="yogeshvaran";
+
+let last name="vivekanandan";
+
+let marital status="single";
+
+let country="India";
+
+let age=23
+
+
+3)Declare variables to store your first name, last name, marital status, country and age in a single line
+
+let first name="yogeshvaran", last name="vivekanandan", marital status="single", country="India", age=23.
+
+4)Convert the string to integer
+parseInt()
+
+5)Write 6 statement which provide truthy & falsey values.
+
+//True
+1=="1";
+1==[1];
+'1'==[1];
+
+//false
+1==="1";
+1===[1];
+'1'===[1];
+
+
+6)Square of a number.
+
+let a=10
+
+console.log(10*10)
+
+output:-
+
+100
+
+
+7)Swapping 2 numbers
+
+let a=10;
+let b=20;
+
+[a,b]=[b,a];
+ console.log(a,b);
+console.log(b,a);
+
+output:-
+20 10
+10 20
+
+8)Addition of 3 numbers
+
+let a=10;
+let b=20;
+let c=30;
+
+
+console.log(a+b+c);
+
+output:-
+60
+
+9)Celsius to Fahrenheit conversion
+let Celcious=98.3
+
+ let Fahrenheit=Celcious*1.8+32
+
+
+console.log(Fahrenheit)
+output:-
+208.94
+
+10)Meter to miles
+
+let meter=15;
+
+let miles =15*0.000621;
+
+console.log(miles)
+
+Output:-
+0.009315
+
+Pounds to kg:-
+let pounds=15;
+
+let kg =15*0.45359237;
+
+console.log(kg)
+
+output:-
+
+6.80388555
+
+12)Calculate Batting Average.
+
+let batterScore=1200;
+
+let timeOut=25;
+
+let average=batterScore/timeOut;
+
+console.log(average)
+
+Output:-
+48
+
+13)Calculate five test scores and print their average.
+
+let testScore=[100,46,0,50,64];
+let timeout=21;
+
+  let res=testScore.reduce((a,b)=> a+b);
+
+  console.log(res/timeout);
+
+Output:-
+12.380952380952381
+
+
+14)Power of any number x ^ y.
+
+ let x=10;
+ let y=2;
+
+let res=Math.pow(x,y)
+
+console.log(res)
+
+output:-
+100
+
+15)Calculate Simple Interest.
+
+let p=15;
+let r=12;
+let t=12;
+
+let SI=p*r*t/100;
+
+
+console.log(SI)
+
+Output:-
+21.6
+
+16)Calculate area of an equilateral triangle.
+
+let area=20.5;
+
+function equalateraltriangle(a){
+    return 1.73*a*a/4
+}
+
+console.log(equalateraltriangle(area))
+
+Output:-
+181.75
+
+17)Area Of Isosceles Triangle.
+
+function area(b,h){
+    return b*h/2
+}
+
+console.log(area(16,20))
+
+Output:-
+160
+
+18)Volume Of Sphere.
+
+let radius=4
+
+function circlevolume(r){
+    return (4/3)*Math.PI*Math.pow(r,3)
+}
+
+
+
+console.log(circlevolume(radius))
+
+Output:-
+
+268.08
+
+
+19)Volume Of Prism.
+
+let side= 10;
+let height= 20
+
+
+function volume(s,h){
+    return Math.pow(s,2)*h
+}
+
+
+console.log(volume(10,20))
+
+
+Output:-
+2000
+
+20)Find area of a triangle.
+
+let b=5;
+let h=17;
+
+function area(b,h){
+
+    return b*h/2
+}
+
+
+console.log(area(5,17))
+
+output:-
+
+42.5
+
+21)Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+let ListPrice= 1500;
+
+let selledPrice= 950;
+
+function discount(a,b){
+    return a-b
+}
+
+
+console.log(discount(1500,950))
+
+Output:-
+
+550
+
+22)Given their radius of a circle and find its diameter, circumference and area.
+
+function diameter(r){
+    
+    console.log(r*2)
+}
+function circumference(r){
+    
+    console.log(2*Math.PI*r)
+    diameter(r)
+
+}
+function area(r){
+    
+    console.log(Math.PI*Math.pow(r,2))
+    circumference(r)
+}
+
+area(5);
+
+23)Display the asterisk pattern as shown below(No loop needed):
+
+function display(a){
+    
+ console.log(a)   
+
+}
+
+  
+display("*****");
+display("*****");
+display("*****");
+display("*****");
+display("*****");
+
+24)Given two numbers and perform all arithmetic operations.
+
+let a=10;
+let b=20;
+
+
+//+
+
+console.log(a+b)
+
+//-
+
+console.log(a-b)
+
+//*
+
+console.log(a*b)
+
+// /
+
+console.log(a/b)
+
+// %
+
+console.log(a%b)
+
+
+25)Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+
+
+function bill(w,h,d,r){
+return w*h*d*r
+}
+
+console.log(bill(100,24,31,10));
+
+26)Program To Calculate CGPA.
+
+let subject=[9.5,8.0,7.2,6.6,9.0];
+
+let total=subject.reduce((a,b)=> a+b)
+
+console.log(total/subject.length)*9.5
+
+
+26)Write a loop that makes seven calls to console.log to output the following triangle
+
+let start = ""
+ for (let i = 0; i<7; i++) {
+   start += "#"
+   console.log(start)
+ }
+
